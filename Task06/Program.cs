@@ -12,4 +12,4 @@ if (number % 2 == 0)
 {
     Console.Write($"{number} - является чётным");
 }
-else Console.Write($"{number} - является нечётным");
+else Console.Write($"{number} - не является чётным");
