@@ -23,11 +23,11 @@ int number2 = 23;
 bool result = DivNum(num, number1, number2);
 if (result)
 {
-    Console.WriteLine("Кратное.");
+    Console.WriteLine("Кратно.");
 } 
 else
 {
-    Console.WriteLine("Не кратны.");
+    Console.WriteLine("Не кратно.");
 }
 
 
