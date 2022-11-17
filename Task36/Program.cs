@@ -29,12 +29,7 @@ void PrintArray(int[] array)
 }
 int SumOddPosition(int[] array)
 {
-    // int sumOddPosition = 0;
-    //    for (int i = 1; i < array.Length; i+2)
-    //    {
-    //         int new sumOddPosition = array[i]+array[i+2];
-    //    }
-    //    return new sumOddPosition;
+   
     int sumOddPosition = 0;
     for (int i = 1; i < array.Length; i+=2)
     {
