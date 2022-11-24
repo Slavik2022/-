@@ -5,33 +5,33 @@
 
 // -1, -7, 567, 89, 223-> 3
 
+
 Console.WriteLine("Задайте количество чисел: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-int[] CreateArrayRndInt(int size, int min, int max)
+int[] NumbersInput(int mx)
 {
-    int[] array = new int[size];
-    Random rnd = new Random();
-    for (int i = 0; i < size; i++)
+    int[] userNumbers = new int[mx];
+    for (int i = 0; i < mx; i++)
     {
-        array[i] = rnd.Next(min, max + 1);
+        Console.WriteLine($"Введите {i + 1} число: ");
+        userNumbers[i] = Convert.ToInt32(Console.ReadLine());
     }
-    return array;
+    return userNumbers;
 }
 
 void PrintArray(int[] array)
 {
     Console.Write("[");
-    // int size = array.Length;
     for (int i = 0; i < array.Length; i++)
     {
-        if (i < array.Length - 1) Console.Write($"{array[i]} | ");
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
         else Console.Write($"{array[i]}");
     }
     Console.WriteLine("]");
 }
 
-int PositiveInteger(int[] array)
+int PositiveIntegerCount(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -40,7 +40,7 @@ int PositiveInteger(int[] array)
     }
     return count;
 }
-int[] arr = CreateArrayRndInt(m, -50, 50);
-PrintArray(arr);
-Console.WriteLine($"Вы ввели {PositiveInteger(arr)} чисел(а) больше нуля.");
 
+int[] arr = NumbersInput(m);
+PrintArray(arr);
+Console.WriteLine($"Вы ввели {PositiveIntegerCount(arr)} чисел больше нуля.");
