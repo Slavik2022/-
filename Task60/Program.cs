@@ -40,5 +40,5 @@ void PrintMatrix3D(int[,,] matrix)
     }
 }
 
-int[,,] array3D = FillArray3xRndInt(2, 2, 2, 0, 10);
+int[,,] array3D = FillArray3xRndInt(2, 2, 2, 10, 99);
 PrintMatrix3D(array3D);
