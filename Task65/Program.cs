@@ -13,14 +13,14 @@ void NaturalsNumbers(int m, int n)
     if (m < n)
     {
         Console.Write($"{m} ");
-        NaturalsNumbers(m+1, n);
+        NaturalsNumbers(m + 1, n);
     }
     if (m > n)
     {
         Console.Write($"{n} ");
-        NaturalsNumbers(n+1, m);
+        NaturalsNumbers(n + 1, m);
     }
-    if(m==n)
+    if (m == n)
     {
         Console.Write($"{m} ");
     }
